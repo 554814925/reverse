@@ -95,7 +95,7 @@ export default function Home() {
             <CardContent className="flex flex-col gap-3">
               <Textarea
                 value={text}
-                onChange={(e) => setText(e.target.value)}
+                onInput={(e) => setText((e.target as HTMLTextAreaElement).value)}
                 placeholder="比如：你好"
                 className="min-h-40 md:min-h-56"
               />
